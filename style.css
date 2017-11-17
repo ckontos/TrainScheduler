@@ -1,0 +1,53 @@
+body {
+	background-image: url('bedge_grunge.png');
+}
+
+.jumbotron {
+	background-color: #660d2a;
+	color: white;
+}
+
+.panel-primary>.panel-heading {
+	background-color: #660d2a;
+}
+
+.panel-primary {
+	border-color: #660d2a;
+}
+
+#addTrainBtn {
+    position: relative;
+    background-color: #660d2a;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 5px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#addTrainBtn:after {
+    content: "";
+    background: #ba1634;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#addTrainBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
